@@ -1,0 +1,150 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="Colophon | Sabine Emden"
+  description="Why and how I built my portfolio website, the tools and technologies I used, and the principles that govern the site."
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero title="Colophon" tagline="How I built my portfolio website" />
+
+      <section>
+        <h2 class="section-title">Framework and tooling</h2>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
+            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
+            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
+            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
+            officia possimus, quae sint praesentium laborum ea mollitia
+            temporibus ab enim blanditiis earum suscipit.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Design</h2>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
+            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
+            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
+            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
+            officia possimus, quae sint praesentium laborum ea mollitia
+            temporibus ab enim blanditiis earum suscipit.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Personalizing my portfolio</h2>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
+            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
+            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
+            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
+            officia possimus, quae sint praesentium laborum ea mollitia
+            temporibus ab enim blanditiis earum suscipit.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Hosting</h2>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
+            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
+            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
+            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
+            officia possimus, quae sint praesentium laborum ea mollitia
+            temporibus ab enim blanditiis earum suscipit.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Domain name</h2>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
+            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
+            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
+            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
+            officia possimus, quae sint praesentium laborum ea mollitia
+            temporibus ab enim blanditiis earum suscipit.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 60em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
