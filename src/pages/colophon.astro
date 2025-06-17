@@ -7,7 +7,7 @@ import Hero from "../components/Hero.astro";
 
 <BaseLayout
   title="Colophon | Sabine Emden"
-  description="Why and how I built my portfolio website, the tools and technologies I used, and the principles that govern the site."
+  description="Why and how I developed my portfolio website, the tools and technologies I used, and the principles that govern the site."
 >
   <div class="stack gap-20">
     <main class="wrapper about">
@@ -45,12 +45,11 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Personalizing my portfolio</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
-            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
-            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
-            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
-            officia possimus, quae sint praesentium laborum ea mollitia
-            temporibus ab enim blanditiis earum suscipit.
+            In addition to customizing copy, images, and social media links, I
+            made a few minor UI modifications. I'm planning to add a blog, and I
+            added two <a href="https://slashpages.net/">slash pages</a>, this <a
+              href="/colophon">colophon</a
+            > and a <a href="/now">now page</a>.
           </p>
         </div>
       </section>
@@ -59,13 +58,14 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Hosting</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
-            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
-            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
-            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
-            officia possimus, quae sint praesentium laborum ea mollitia
-            temporibus ab enim blanditiis earum suscipit.
+            This site is deployed to <a href="https://netlify.com/">Netlify</a> as
+            a static site and takes advantage of continuous deployment. The source
+            code is hosted in a Git repository on <a href="https://github.com/"
+              >GitHub</a
+            >. Netlify watches this repository's main branch for changes. It
+            rebuilds and republishes the site at each new commit.
           </p>
+          <p></p>
         </div>
       </section>
 
@@ -73,13 +73,56 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Domain name</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
-            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
-            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
-            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
-            officia possimus, quae sint praesentium laborum ea mollitia
-            temporibus ab enim blanditiis earum suscipit.
+            I chose my first and last name with a .com extension as the domain
+            name for my portfolio site. This was the most obvious (and often
+            recommended) choice for a website I want to use professionally in
+            job applications. It also matches my social media handles on most
+            platforms.
           </p>
+          <p>
+            My domain registrar is <a href="https://www.hover.com/">Hover</a>.
+            The <abbr title="Domain Name System">DNS</abbr> provider is Netlify DNS.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Acknowledgements</h2>
+        <div class="content">
+          <p>
+            I used a couple of resources as inspiration and guidance for
+            creating this website:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.frontendmentor.io/learning-paths/getting-job-ready-D1Oy0wCxWj"
+                >Getting job ready</a
+              > learning path on Frontend Mentor - The article <cite
+                >Creating an effective portfolio</cite
+              > has helpful tips on how to structure a portfolio, source a design,
+              select projects, and write project descriptions.
+            </li>
+            <li>
+              <a href="https://www.joshwcomeau.com/effective-portfolio/"
+                >Building an Effective Dev Portfolio</a
+              > by Josh Comeau - This e-book has has two case study and lots of good
+              advice on how to use a portfolio site to stand out to prospective employers
+              when searching for a junior developer job.
+            </li>
+            <li>
+              <a href="https://www.annamcdougall.com/book">You Belong in Tech</a
+              > by Anna Jean McDougall - This is a great book for anyone who is considering
+              a career change into tech. The sections on personal branding and crafting
+              an elevator pitch have been very helpful to me.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <!-- <h2 class="section-title">Hosting</h2> -->
+        <div class="content">
+          <p>Last updated on May 8, 2025.</p>
         </div>
       </section>
     </main>
@@ -122,15 +165,15 @@ import Hero from "../components/Hero.astro";
   }
 
   .content :global(a) {
-    text-decoration: 1px solid underline transparent;
+    text-decoration: 1px solid underline currentColor; /* changed from `transparent` */
     text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
+    /* transition: text-decoration-color var(--theme-transition); */
   }
 
-  .content :global(a:hover),
+  /* .content :global(a:hover),
   .content :global(a:focus) {
     text-decoration-color: currentColor;
-  }
+  } */
 
   @media (min-width: 60em) {
     .about {
