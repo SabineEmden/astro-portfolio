@@ -7,13 +7,13 @@ import Hero from "../components/Hero.astro";
 
 <BaseLayout
   title="About Me | Sabine Emden"
-  description="I'm an aspiring web developer who is trained as a chemist. What I bring from chemistry to software development is a systematic approach to problem solving."
+  description="Hello! My name is Sabine. I'm an aspiring web developer and a former chemist. Learn more about myself and my background."
 >
   <div class="stack gap-20">
     <main class="wrapper about">
       <Hero
         title="About Me"
-        tagline="Thanks for stopping by! Read below to learn more about myself and my background."
+        tagline="I'm an aspiring web developer and a former chemist."
       >
         <img
           width="1553"
@@ -27,12 +27,9 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Background</h2>
         <div class="content">
           <p>
-            I'm a self-taught web developer who is trained as a chemist. What I
-            bring from chemistry to software development is a systematic
-            approach to problem solving and the grit not to give up easily.
-          </p>
-          <p>
-            I'm currently learning full-stack JavaScript with <a
+            What I bring from chemistry to software development is a systematic
+            approach to problem solving and the grit not to give up easily. I'm
+            currently learning full-stack JavaScript with <a
               href="https://www.theodinproject.com/">The Odin Project</a
             >. For additional practice, I'm building websites in a realistic
             workflow with <a href="https://www.frontendmentor.io/"
@@ -42,11 +39,13 @@ import Hero from "../components/Hero.astro";
             > as a side project.
           </p>
           <p>
-            As a chemist, I have over 6 years of laboratory experience and over
-            4 years of experience in project management supporting product
-            development and order fulfillment. I'm dependable, detail-oriented
-            with strong organizational skills, and bilingual in English and
-            German.
+            As a project manager with a background in chemistry, I combine over
+            4 years of project management supporting product development and
+            managing order fulfillment with over 6 years of laboratory
+            experience. What I bring to project management are strong
+            organizational skills and an affinity for science, technology,
+            engineering, and mathematics (STEM). I'm dependable,
+            detail-oriented, and fluent in English and German.
           </p>
         </div>
       </section>
@@ -105,14 +104,14 @@ import Hero from "../components/Hero.astro";
   }
 
   .content :global(a) {
-    text-decoration: 1px solid underline transparent;
+    text-decoration: 1px solid underline var(--accent-regular);
     text-underline-offset: 0.25em;
     transition: text-decoration-color var(--theme-transition);
   }
 
   .content :global(a:hover),
   .content :global(a:focus) {
-    text-decoration-color: currentColor;
+    text-decoration-color: var(--accent-dark);
   }
 
   @media (min-width: 60em) {
