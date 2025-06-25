@@ -7,22 +7,31 @@ import Hero from "../components/Hero.astro";
 
 <BaseLayout
   title="Colophon | Sabine Emden"
-  description="Why and how I developed my portfolio website, the tools and technologies I used, and the principles that govern the site."
+  description="Hello! My name is Sabine. I'm an aspiring web developer and a former chemist. Learn how I built my portfolio website."
 >
   <div class="stack gap-20">
-    <main class="wrapper about">
+    <main class="wrapper colophon">
       <Hero title="Colophon" tagline="How I built my portfolio website" />
 
       <section>
         <h2 class="section-title">Framework and tooling</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
-            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
-            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
-            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
-            officia possimus, quae sint praesentium laborum ea mollitia
-            temporibus ab enim blanditiis earum suscipit.
+            I knew I wanted to build my portfolio website as a <a
+              href="https://jamstack.org/">Jamstack</a
+            > site since I read in Tom Greenwood's book <a
+              href="https://abookapart.com/products/sustainable-web-design.html"
+              >Sustainable Web Design</a
+            > about the advantages of this architectural approach for performance
+            and web sustainability. As a static site builder, I chose <a
+              href="https://astro.build/">Astro</a
+            >, a JavaScript meta framework designed for content-rich websites
+            like blogs and portfolios.
+          </p>
+          <p>
+            I plan to use <a href="https://frontmatter.codes/"
+              >Front Matter CMS</a
+            > as a content management system for project descriptions and blog posts.
           </p>
         </div>
       </section>
@@ -31,25 +40,73 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Design</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
-            libero blanditiis facilis nobis neque sequi ullam, illum dolorem
-            ipsam eligendi ratione dicta laborum voluptatibus obcaecati quae,
-            rerum, vitae facere voluptate repellendus! Molestias corrupti omnis
-            officia possimus, quae sint praesentium laborum ea mollitia
-            temporibus ab enim blanditiis earum suscipit.
+            I built this website with the official <a
+              href="https://astro.build/themes/details/portfolio/"
+              >Astro portfolio theme</a
+            >. I plan to write a blog post to explain in more detail why I made
+            this decision. Here are the main reasons:
+          </p>
+          <ul>
+            <li>
+              I made this website to showcase my other coding projects. Using
+              starter code got me to a working version much faster than starting
+              from scratch.
+            </li>
+            <li>
+              I can use features that are outside of my current technical skills
+              and gain experience in working with an existing code base.
+            </li>
+            <li>
+              I'm not a designer and don't have the skills to design a portfolio
+              website. Even if I had opted to write all the code myself, I still
+              would have used a design template.
+            </li>
+          </ul>
+          <p>
+            The color palette came with the theme, as did the fonts and the <abbr
+              title="scalable vector graphics">SVG</abbr
+            >
+            icons. The fonts are <a href="https://github.com/uswds/public-sans"
+              >Public Sans</a
+            > for the body and <a href="https://github.com/googlefonts/Rubik"
+              >Rubik</a
+            > for headings. Public Sans was developed by <a
+              href="https://designsystem.digital.gov/"
+              >The United States Web Design System (USWDS)</a
+            >. Rubik was designed by Philipp Hubert and Sebastian Fischer at <a
+              href="https://hfs-studio.com/">Hubert &amp; Fischer</a
+            >. Both are variable fonts and licensed under the <a
+              href="https://openfontlicense.org/">Open Font License</a
+            >. The icons are adapted from <a href="https://phosphoricons.com/"
+              >Phosphor Icons.</a
+            >
           </p>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Personalizing my portfolio</h2>
+        <h2 class="section-title">Customi&shy;zation</h2>
         <div class="content">
+          <p>I plan to add a blog to this website.</p>
           <p>
-            In addition to customizing copy, images, and social media links, I
-            made a few minor UI modifications. I'm planning to add a blog, and I
-            added two <a href="https://slashpages.net/">slash pages</a>, this <a
-              href="/colophon">colophon</a
-            > and a <a href="/now">now page</a>.
+            I added this <a href="/colophon">&#47;colophon</a> and a <a
+              href="/now">&#47;now</a
+            > page. They are both <a href="https://slashpages.net/"
+              >slash pages</a
+            >. The &#47;colophon describes how this website is made. The
+            &#47;now page tells you what I am focused on at this point in my
+            life.
+          </p>
+          <p>
+            I made a few <abbr title="user interface">UI</abbr> modifications to
+            improve accessibility and responsive design. <a
+              href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+              >Web accessibility</a
+            > removes barriers that prevent access to and interaction with websites.
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+              >Responsive web design (RWD)</a
+            > aims for web pages to render well on a variety of devices.
           </p>
         </div>
       </section>
@@ -74,23 +131,25 @@ import Hero from "../components/Hero.astro";
         <div class="content">
           <p>
             I chose my first and last name with a .com extension as the domain
-            name for my portfolio site. This was the most obvious (and often
-            recommended) choice for a website I want to use professionally in
+            name for my portfolio site. This was the most obvious&mdash;and
+            often recommended&mdash;choice for a website that I want to use in
             job applications. It also matches my social media handles on most
             platforms.
           </p>
           <p>
-            My domain registrar is <a href="https://www.hover.com/">Hover</a>.
-            The <abbr title="Domain Name System">DNS</abbr> provider is Netlify DNS.
+            I use <a href="https://www.hover.com/">Hover</a> as my domain registrar
+            and Netlify DNS as my <abbr title="Domain Name System">DNS</abbr> provider.
+            My email provider is <a href="https://proton.me/mail">Proton Mail</a
+            >.
           </p>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Acknowledgements</h2>
+        <h2 class="section-title">Acknowl&shy;edge&shy;ments</h2>
         <div class="content">
           <p>
-            I used a couple of resources as inspiration and guidance for
+            I used the following resources as inspiration and guidance for
             creating this website:
           </p>
           <ul>
@@ -120,74 +179,74 @@ import Hero from "../components/Hero.astro";
         </div>
       </section>
       <section>
-        <!-- <h2 class="section-title">Hosting</h2> -->
         <div class="content">
-          <p>Last updated on May 8, 2025.</p>
+          <p>Last updated on June 25, 2025.</p>
         </div>
       </section>
     </main>
 
     <ContactCTA />
   </div>
-</BaseLayout>
 
-<style>
-  .about {
-    display: flex;
-    flex-direction: column;
-    gap: 3.5rem;
-  }
-
-  img {
-    margin-top: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: var(--shadow-md);
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: var(--gray-200);
-  }
-
-  .section-title {
-    grid-column-start: 1;
-    font-size: var(--text-xl);
-    color: var(--gray-0);
-  }
-
-  .content {
-    grid-column: 2 / 4;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .content :global(a) {
-    text-decoration: 1px solid underline currentColor; /* changed from `transparent` */
-    text-underline-offset: 0.25em;
-    /* transition: text-decoration-color var(--theme-transition); */
-  }
-
-  /* .content :global(a:hover),
-  .content :global(a:focus) {
-    text-decoration-color: currentColor;
-  } */
-
-  @media (min-width: 60em) {
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 60% 1fr;
-    }
-
-    .about > :global(:first-child) {
-      grid-column-start: 2;
+  <style>
+    .colophon {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
     }
 
     section {
-      display: contents;
-      font-size: var(--text-lg);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--gray-200);
+      max-width: 65ch;
+      margin: 0 auto;
     }
-  }
-</style>
+
+    .section-title {
+      grid-column-start: 1;
+      font-size: var(--text-xl);
+      color: var(--gray-0);
+    }
+
+    .content {
+      grid-column: 2 / 4;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-underline-offset: 0.25em;
+    }
+
+    .content :global(a) {
+      text-decoration: 1px solid underline var(--accent-regular);
+      transition: text-decoration-color var(--theme-transition);
+    }
+
+    .content :global(a:hover),
+    .content :global(a:focus) {
+      text-decoration-color: var(--accent-dark);
+    }
+
+    @media (min-width: 60em) {
+      .colophon {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+      }
+
+      .colophon > :global(:first-child) {
+        grid-column-start: 2;
+      }
+
+      section {
+        display: contents;
+        font-size: var(--text-lg);
+        max-width: none;
+      }
+
+      .content {
+        max-width: 65ch;
+      }
+    }
+  </style>
+</BaseLayout>
